@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v_0_0_0", "v_0_0_0\v_0_0_0.csproj", "{50BE6D69-70C0-4629-AADF-12C34AE44447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMySQLConnector", "TMySQLConnector\TMySQLConnector.csproj", "{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDebugLogs", "TDebugLogs\TDebugLogs.csproj", "{C7921C21-E860-4811-A41D-ECF1CDB3E164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALibrary", "TAFunctions\TALibrary.csproj", "{13DCAC49-DCA0-451A-B371-C73354ECDF44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50BE6D69-70C0-4629-AADF-12C34AE44447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BE6D69-70C0-4629-AADF-12C34AE44447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BE6D69-70C0-4629-AADF-12C34AE44447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BE6D69-70C0-4629-AADF-12C34AE44447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7921C21-E860-4811-A41D-ECF1CDB3E164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7921C21-E860-4811-A41D-ECF1CDB3E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7921C21-E860-4811-A41D-ECF1CDB3E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7921C21-E860-4811-A41D-ECF1CDB3E164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DCAC49-DCA0-451A-B371-C73354ECDF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13DCAC49-DCA0-451A-B371-C73354ECDF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13DCAC49-DCA0-451A-B371-C73354ECDF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13DCAC49-DCA0-451A-B371-C73354ECDF44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

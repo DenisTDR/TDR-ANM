@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50BE6D69-70C0-4629-AADF-12C34AE44447}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>v_0_0_0</RootNamespace>
+    <AssemblyName>[UnifiedPost] Delight Application</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon2_256px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Display Controls\CategoryControls\CategoryControlEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoryControlEdit.Designer.cs">
+      <DependentUpon>CategoryControlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\AdminMainMenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\AdminMainMenuControl.Designer.cs">
+      <DependentUpon>AdminMainMenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\graphControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\graphControl.Designer.cs">
+      <DependentUpon>graphControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\reportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\reportControl.Designer.cs">
+      <DependentUpon>reportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlNew.Designer.cs">
+      <DependentUpon>ProductControlNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlEdit.Designer.cs">
+      <DependentUpon>UserControlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UsersContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UsersContainer.Designer.cs">
+      <DependentUpon>UsersContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlT.Designer.cs">
+      <DependentUpon>UserControlT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\UserControlNew.Designer.cs">
+      <DependentUpon>UserControlNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupAndUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupAndUsers.Designer.cs">
+      <DependentUpon>GroupAndUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlEditPoints.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlEditPoints.Designer.cs">
+      <DependentUpon>GroupControlEditPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlEdit.Designer.cs">
+      <DependentUpon>GroupControlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControl.Designer.cs">
+      <DependentUpon>GroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupsContainer.Designer.cs">
+      <DependentUpon>GroupsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\GroupAndUserControls\GroupControlNew.Designer.cs">
+      <DependentUpon>GroupControlNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlVote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlVote.Designer.cs">
+      <DependentUpon>ProductControlVote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductsContainer.Designer.cs">
+      <DependentUpon>ProductsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoriesContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoriesContainer.Designer.cs">
+      <DependentUpon>CategoriesContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoryControl.Designer.cs">
+      <DependentUpon>CategoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\mainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\mainControl.Designer.cs">
+      <DependentUpon>mainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\loginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\loginControl.Designer.cs">
+      <DependentUpon>loginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControl.Designer.cs">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\ProductControls\ProductControlEdit.Designer.cs">
+      <DependentUpon>ProductControlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="static classes\extM.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Display Controls\CategoryControls\CategoryControlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\CategoryControls\CategoryControlNew.Designer.cs">
+      <DependentUpon>CategoryControlNew.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Display Controls\CategoryControls\CategoryControlNew.resx">
+      <DependentUpon>CategoryControlNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\CategoryControls\CategoryControlEdit.resx">
+      <DependentUpon>CategoryControlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\AdminMainMenuControl.resx">
+      <DependentUpon>AdminMainMenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\graphControl.resx">
+      <DependentUpon>graphControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\reportControl.resx">
+      <DependentUpon>reportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\ProductControls\ProductControlNew.resx">
+      <DependentUpon>ProductControlNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\UserControlEdit.resx">
+      <DependentUpon>UserControlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\UsersContainer.resx">
+      <DependentUpon>UsersContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\UserControlT.resx">
+      <DependentUpon>UserControlT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\UserControlNew.resx">
+      <DependentUpon>UserControlNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupAndUsers.resx">
+      <DependentUpon>GroupAndUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupControlEditPoints.resx">
+      <DependentUpon>GroupControlEditPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupControlEdit.resx">
+      <DependentUpon>GroupControlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupControl.resx">
+      <DependentUpon>GroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupsContainer.resx">
+      <DependentUpon>GroupsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\GroupAndUserControls\GroupControlNew.resx">
+      <DependentUpon>GroupControlNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\ProductControls\ProductControlVote.resx">
+      <DependentUpon>ProductControlVote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\ProductControls\ProductControl.resx">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\ProductControls\ProductControlEdit.resx">
+      <DependentUpon>ProductControlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\ProductControls\ProductsContainer.resx">
+      <DependentUpon>ProductsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\CategoryControls\CategoriesContainer.resx">
+      <DependentUpon>CategoriesContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\CategoryControls\CategoryControl.resx">
+      <DependentUpon>CategoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\mainControl.resx">
+      <DependentUpon>mainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\loginControl.resx">
+      <DependentUpon>loginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TAFunctions\TALibrary.csproj">
+      <Project>{13dcac49-dca0-451a-b371-c73354ecdf44}</Project>
+      <Name>TALibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDebugLogs\TDebugLogs.csproj">
+      <Project>{c7921c21-e860-4811-a41d-ecf1cdb3e164}</Project>
+      <Name>TDebugLogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TMySQLConnector\TMySQLConnector.csproj">
+      <Project>{bdd5a91a-ab32-4a4c-9ab7-fe71e9ff55df}</Project>
+      <Name>TMySQLConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon1.ico" />
+    <Content Include="icon2_256px.ico" />
+    <None Include="Resources\votelike.png" />
+    <None Include="Resources\backicon.png" />
+    <None Include="Resources\save_icon.png" />
+    <None Include="Resources\EDIT.png" />
+    <None Include="Resources\Delete_IconOrange.png" />
+    <None Include="Resources\graph_icon2.png" />
+    <None Include="Resources\person orange final.png" />
+    <None Include="Resources\bread_orange.png" />
+    <None Include="Resources\peopleicon.png" />
+    <None Include="Resources\addicon.png" />
+    <None Include="Resources\reload1.png" />
+    <None Include="Resources\previous1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\unifiedpost.png" />
+    <None Include="Resources\adduser.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
