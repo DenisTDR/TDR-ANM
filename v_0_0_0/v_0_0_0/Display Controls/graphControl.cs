@@ -194,6 +194,7 @@ namespace TALibrary
 
             for (int pIndex = 0; pIndex < selectedProducts.Count; pIndex++)
             {
+                pen2 = new Pen(RandomColor(), 3);
                 for (int i = 1; i < gl; i++)
                 {
 
@@ -231,7 +232,18 @@ namespace TALibrary
             //g.DrawRectangle(new Pen(new SolidBrush(Color.Red), 3), new Rectangle(0, 0, bmp.Width, bmp.Height));
             pictureBox1.Image = bmp;
         }
+        Random r = new Random(DateTime.Now.Millisecond);
 
+
+
+        public Color RandomColor()
+        {
+            byte red = (byte)r.Next(0, 255);
+            byte green = (byte)r.Next(0, 255);
+            byte blue = (byte)r.Next(0, 255);
+            return Color.FromArgb(red, green, blue);
+
+        }
         public bool sameMonth(DateTime dt1, DateTime dt2)
         {
             return dt1.Month == dt2.Month && dt1.Year == dt2.Year;

@@ -9,7 +9,7 @@ namespace TDebugLogs
     public static class TDebugLogs
     {
         static LogsWindow lw;
-        static bool debugging = true;
+        static bool debugging = false;
         public static void Log(Exception exc, string msg = "")
         {
             if (!debugging)

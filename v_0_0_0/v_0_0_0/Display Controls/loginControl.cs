@@ -27,8 +27,8 @@ namespace TALibrary
         private void loginControl_Load(object sender, EventArgs e)
         {
             ext.initDb();
-            userTxt.Text = "tdr";
-            passTxt.Text = "tdr";
+            //userTxt.Text = "tdr";
+            //passTxt.Text = "tdr";
             //loginBtn.PerformClick();
         }
         private void loginBtn_Click(object sender, EventArgs e)

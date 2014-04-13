@@ -43,9 +43,9 @@
             this.settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.settingsBtn.ForeColor = System.Drawing.Color.White;
-            this.settingsBtn.Location = new System.Drawing.Point(208, 277);
+            this.settingsBtn.Location = new System.Drawing.Point(251, 271);
             this.settingsBtn.Name = "settingsBtn";
-            this.settingsBtn.Size = new System.Drawing.Size(77, 81);
+            this.settingsBtn.Size = new System.Drawing.Size(64, 58);
             this.settingsBtn.TabIndex = 5;
             this.settingsBtn.UseVisualStyleBackColor = true;
             this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
@@ -58,7 +58,7 @@
             this.graphBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.graphBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.graphBtn.ForeColor = System.Drawing.Color.White;
-            this.graphBtn.Location = new System.Drawing.Point(186, 161);
+            this.graphBtn.Location = new System.Drawing.Point(190, 155);
             this.graphBtn.Name = "graphBtn";
             this.graphBtn.Size = new System.Drawing.Size(125, 110);
             this.graphBtn.TabIndex = 4;
@@ -73,7 +73,7 @@
             this.categoriesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.categoriesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.categoriesBtn.ForeColor = System.Drawing.Color.White;
-            this.categoriesBtn.Location = new System.Drawing.Point(186, 26);
+            this.categoriesBtn.Location = new System.Drawing.Point(190, 20);
             this.categoriesBtn.Name = "categoriesBtn";
             this.categoriesBtn.Size = new System.Drawing.Size(125, 110);
             this.categoriesBtn.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.usersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.usersBtn.ForeColor = System.Drawing.Color.White;
-            this.usersBtn.Location = new System.Drawing.Point(23, 161);
+            this.usersBtn.Location = new System.Drawing.Point(27, 155);
             this.usersBtn.Name = "usersBtn";
             this.usersBtn.Size = new System.Drawing.Size(125, 110);
             this.usersBtn.TabIndex = 1;
@@ -103,7 +103,7 @@
             this.groupsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.groupsBtn.ForeColor = System.Drawing.Color.White;
-            this.groupsBtn.Location = new System.Drawing.Point(23, 26);
+            this.groupsBtn.Location = new System.Drawing.Point(27, 20);
             this.groupsBtn.Name = "groupsBtn";
             this.groupsBtn.Size = new System.Drawing.Size(125, 110);
             this.groupsBtn.TabIndex = 0;
@@ -121,7 +121,7 @@
             this.Controls.Add(this.usersBtn);
             this.Controls.Add(this.groupsBtn);
             this.Name = "AdminMainMenuControl";
-            this.Size = new System.Drawing.Size(326, 361);
+            this.Size = new System.Drawing.Size(338, 347);
             this.ResumeLayout(false);
 
         }

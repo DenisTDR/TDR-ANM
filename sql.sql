@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2014-04-13 05:56:14
+Date: 2014-04-13 07:52:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,7 +35,7 @@ CREATE TABLE `account` (
 -- ----------------------------
 INSERT INTO `account` VALUES ('1', 'admin', 'admin', 'Admin', '0', '1', '1');
 INSERT INTO `account` VALUES ('69', 'tdr', 'tdr', 'TDR', '255', '1', '1');
-INSERT INTO `account` VALUES ('70', 'tdr2', 'tdr', 'TDR2', '65', '0', '2');
+INSERT INTO `account` VALUES ('70', 'tdr2', 'tdr', 'TDR2', '47', '0', '2');
 INSERT INTO `account` VALUES ('71', 'usr2meu', 'pass', 'USeR2mea', '6', '0', '3');
 INSERT INTO `account` VALUES ('72', 'usr3', 'pass', 'User3', '6', '0', '3');
 INSERT INTO `account` VALUES ('74', 'usr4', 'pass', 'User4', '0', '0', '23');
@@ -96,7 +96,7 @@ CREATE TABLE `product` (
 -- ----------------------------
 -- Records of product
 -- ----------------------------
-INSERT INTO `product` VALUES ('1', 'product1', '3', '16', '1');
+INSERT INTO `product` VALUES ('1', 'product1', '3', '34', '1');
 INSERT INTO `product` VALUES ('2', 'product2', '45', '170', '1');
 INSERT INTO `product` VALUES ('7', 'product7', '21', '37', '2');
 INSERT INTO `product` VALUES ('8', 'product8', '24', '29', '2');
@@ -120,7 +120,7 @@ CREATE TABLE `setting` (
 -- Records of setting
 -- ----------------------------
 INSERT INTO `setting` VALUES ('1', 'welcome_message', 'Welcome User!');
-INSERT INTO `setting` VALUES ('2', 'admin_welcome_message', 'Welcome Mr. Administrator!');
+INSERT INTO `setting` VALUES ('2', 'admin_welcome_message', 'Welcome Admin!');
 
 -- ----------------------------
 -- Table structure for votes
@@ -133,7 +133,7 @@ CREATE TABLE `votes` (
   `time` datetime DEFAULT NULL,
   `account_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of votes
@@ -163,3 +163,6 @@ INSERT INTO `votes` VALUES ('32', '16', '11', '2014-04-12 21:20:17', null);
 INSERT INTO `votes` VALUES ('33', '16', '15', '2014-05-12 21:20:17', null);
 INSERT INTO `votes` VALUES ('34', '16', '58', '2014-03-12 21:20:17', null);
 INSERT INTO `votes` VALUES ('35', '2', '5', '2014-04-13 05:01:29', '70');
+INSERT INTO `votes` VALUES ('36', '1', '5', '2014-04-13 06:57:00', '70');
+INSERT INTO `votes` VALUES ('37', '1', '5', '2014-04-13 06:57:03', '70');
+INSERT INTO `votes` VALUES ('38', '1', '8', '2014-04-13 06:58:40', '70');
