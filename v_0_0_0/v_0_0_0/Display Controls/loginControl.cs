@@ -52,6 +52,8 @@ namespace TALibrary
 
                 ext.connectedAccount = acc;
                 string msg = funcs.getSetting(acc.Admin ? "admin_welcome_message" : "welcome_message");
+                extM.mf.userLbl.Text = "Logged in as: " + acc.Name + " (" + (acc.Admin ? "Admin" : "User") + ")";
+                extM.mf.pointsLbl.Text = "Vote points: " + acc.Points;
                 MessageBox.Show(msg);
                 if (acc.Admin)
                     extM.mf.addControl(new AdminMainMenuControl());
@@ -72,6 +74,16 @@ namespace TALibrary
                 loginBtn.Enabled = true;
                 MessageBox.Show("Can't connect to DB");
             }
+        }
+        public override void TShow()
+        {
+            base.TShow();
+            extM.mf.userPanel.Visible = false;
+        }
+        public override void THide(){
+            base.THide();
+            extM.mf.userPanel.Visible = true;
+
         }
 
     

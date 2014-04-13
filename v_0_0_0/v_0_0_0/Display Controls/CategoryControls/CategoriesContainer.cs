@@ -50,7 +50,7 @@ namespace TALibrary
             this.Controls.Clear();
             this.Controls.Add(refreshBtn);
             this.Controls.Add(addBtn);
-            int y = 0;
+            int y = 10;
             for (int i = 0; i < llo.Count; i++)
             {
                 Category c = new Category()

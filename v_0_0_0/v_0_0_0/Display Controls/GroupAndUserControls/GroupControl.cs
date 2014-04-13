@@ -39,6 +39,7 @@ namespace TALibrary
             if (MessageBox.Show("Are you sure you want to delete this group?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 ext.tconn.NonQuery("DELETE from `group` where id=??;", new List<object>() { Group.ID });
+                ext.tconn.NonQuery("UPDATE account set group_id=0 where group_id=??;", new List<object>() { Group.ID });
                 (this.Parent as GroupsContainer).Reload();
             }
         }

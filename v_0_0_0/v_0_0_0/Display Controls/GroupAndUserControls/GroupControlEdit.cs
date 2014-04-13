@@ -22,8 +22,8 @@ namespace TALibrary
 
         void mf_Resize(object sender, EventArgs e)
         {
-            this.Left = extM.mf.Width / 2 - this.Width / 2;
-            this.Top = extM.mf.Height / 2 - this.Height / 2;
+            this.Left = extM.mf.mainPanel.Width / 2 - this.Width / 2;
+            this.Top = extM.mf.mainPanel.Height / 2 - this.Height / 2;
         }
         void GroupControlEdit_Load(object sender, EventArgs e)
         {

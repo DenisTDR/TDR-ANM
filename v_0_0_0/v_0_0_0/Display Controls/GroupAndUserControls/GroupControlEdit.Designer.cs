@@ -36,38 +36,55 @@
             // 
             // okBtn
             // 
-            this.okBtn.Location = new System.Drawing.Point(190, 13);
+            this.okBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.save_icon;
+            this.okBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.okBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.okBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.okBtn.ForeColor = System.Drawing.Color.White;
+            this.okBtn.Location = new System.Drawing.Point(272, 6);
             this.okBtn.Name = "okBtn";
-            this.okBtn.Size = new System.Drawing.Size(48, 20);
+            this.okBtn.Size = new System.Drawing.Size(33, 30);
             this.okBtn.TabIndex = 5;
-            this.okBtn.Text = "Save";
             this.okBtn.UseVisualStyleBackColor = true;
             this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 23);
+            this.label1.Size = new System.Drawing.Size(89, 23);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Name";
+            this.label1.Text = "New name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nameTxt
             // 
-            this.nameTxt.Location = new System.Drawing.Point(79, 12);
+            this.nameTxt.BackColor = System.Drawing.Color.DimGray;
+            this.nameTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nameTxt.ForeColor = System.Drawing.Color.White;
+            this.nameTxt.Location = new System.Drawing.Point(98, 10);
             this.nameTxt.Name = "nameTxt";
-            this.nameTxt.Size = new System.Drawing.Size(100, 20);
+            this.nameTxt.Size = new System.Drawing.Size(168, 22);
             this.nameTxt.TabIndex = 1;
             this.nameTxt.TextChanged += new System.EventHandler(this.nameTxt_TextChanged);
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(244, 9);
+            this.cancelBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.backicon;
+            this.cancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cancelBtn.ForeColor = System.Drawing.Color.White;
+            this.cancelBtn.Location = new System.Drawing.Point(311, 6);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(56, 23);
+            this.cancelBtn.Size = new System.Drawing.Size(33, 30);
             this.cancelBtn.TabIndex = 0;
-            this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
@@ -75,12 +92,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.okBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTxt);
             this.Controls.Add(this.cancelBtn);
             this.Name = "GroupControlEdit";
-            this.Size = new System.Drawing.Size(300, 40);
+            this.Size = new System.Drawing.Size(345, 40);
             this.ResumeLayout(false);
             this.PerformLayout();
 

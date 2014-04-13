@@ -319,6 +319,8 @@
   <ItemGroup>
     <Content Include="icon1.ico" />
     <Content Include="icon2_256px.ico" />
+    <None Include="Resources\navigate-rightorange.png" />
+    <None Include="Resources\navigate-leftorangeeee1.png" />
     <None Include="Resources\votelike.png" />
     <None Include="Resources\backicon.png" />
     <None Include="Resources\save_icon.png" />

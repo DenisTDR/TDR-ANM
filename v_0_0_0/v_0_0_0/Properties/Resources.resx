@@ -136,6 +136,12 @@
   <data name="peopleicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peopleicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="navigate-leftorangeeee1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigate-leftorangeeee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person orange final" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person orange final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,13 +160,13 @@
   <data name="previous1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\previous1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="votelike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\votelike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unifiedpost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unifiedpost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="votelike" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\votelike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="navigate-rightorange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigate-rightorange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

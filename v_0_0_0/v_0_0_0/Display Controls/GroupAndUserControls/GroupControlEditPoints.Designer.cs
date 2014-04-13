@@ -37,38 +37,55 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 19);
+            this.numericUpDown1.BackColor = System.Drawing.Color.DimGray;
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown1.Location = new System.Drawing.Point(62, 31);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(315, 22);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 13);
+            this.label1.Size = new System.Drawing.Size(539, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "How many points do you want the members of g1 to have?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(179, 19);
+            this.button1.BackgroundImage = global::v_0_0_0.Properties.Resources.votelike;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(383, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(45, 32);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Ok";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(255, 16);
+            this.cancelBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.backicon;
+            this.cancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cancelBtn.ForeColor = System.Drawing.Color.White;
+            this.cancelBtn.Location = new System.Drawing.Point(434, 26);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.cancelBtn.Size = new System.Drawing.Size(45, 32);
             this.cancelBtn.TabIndex = 3;
-            this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
@@ -76,16 +93,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "GroupControlEditPoints";
-            this.Size = new System.Drawing.Size(333, 47);
+            this.Size = new System.Drawing.Size(542, 58);
             this.Load += new System.EventHandler(this.GroupControlEditPoints_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

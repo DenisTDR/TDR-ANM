@@ -15,6 +15,7 @@ namespace v_0_0_0
         {
             InitializeComponent();
             pages = new List<mainControl>();
+            userPanel.Visible = false;
         }
         public List<mainControl> pages;
         loginControl lc;
@@ -93,6 +94,19 @@ namespace v_0_0_0
             nextBtn.Enabled = crt_index < pages.Count - 1;
             mainPanel.Width++;
             mainPanel.Width--;
+        }
+
+        private void refreshPointsBtn_Click(object sender, EventArgs e)
+        {
+            int rp = Convert.ToInt32(ext.tconn.Value("SELECT points from account where id=??;", new List<object>() { ext.connectedAccount.Id }));
+            ext.connectedAccount.Points = rp;
+            extM.mf.pointsLbl.Text = "Vote points: " + rp;
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            while (PrevBtn.Enabled && PrevBtn.Visible)
+                PrevBtn.PerformClick();
         }
     }
 }

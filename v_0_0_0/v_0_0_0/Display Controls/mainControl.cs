@@ -19,7 +19,7 @@ namespace TALibrary
         {
             this.Visible = true;
         }
-        public void THide()
+        public virtual void THide()
         {
             this.Visible = false;
         }

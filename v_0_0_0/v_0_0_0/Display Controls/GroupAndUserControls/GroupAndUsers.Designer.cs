@@ -28,78 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelBtn = new TALibrary.CustomButton();
             this.noGroupUsersLb = new TALibrary.CustomListBox();
             this.thisGroupUsersLB = new TALibrary.CustomListBox();
-            this.addTheUsersBtn = new TALibrary.CustomButton();
-            this.deleteTheUsersBtn = new TALibrary.CustomButton();
             this.label1 = new TALibrary.CustomLabel();
             this.label2 = new TALibrary.CustomLabel();
             this.label3 = new TALibrary.CustomLabel();
+            this.cancelBtn = new TALibrary.CustomButton();
+            this.deleteTheUsersBtn = new TALibrary.CustomButton();
+            this.addTheUsersBtn = new TALibrary.CustomButton();
             this.SuspendLayout();
-            // 
-            // cancelBtn
-            // 
-            this.cancelBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.backicon;
-            this.cancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cancelBtn.ForeColor = System.Drawing.Color.White;
-            this.cancelBtn.Location = new System.Drawing.Point(447, 0);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(43, 36);
-            this.cancelBtn.TabIndex = 0;
-            this.cancelBtn.UseVisualStyleBackColor = true;
-            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // noGroupUsersLb
             // 
+            this.noGroupUsersLb.BackColor = System.Drawing.Color.DimGray;
+            this.noGroupUsersLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.noGroupUsersLb.ForeColor = System.Drawing.Color.White;
             this.noGroupUsersLb.FormattingEnabled = true;
-            this.noGroupUsersLb.Location = new System.Drawing.Point(287, 75);
+            this.noGroupUsersLb.ItemHeight = 16;
+            this.noGroupUsersLb.Location = new System.Drawing.Point(260, 62);
             this.noGroupUsersLb.Name = "noGroupUsersLb";
             this.noGroupUsersLb.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.noGroupUsersLb.Size = new System.Drawing.Size(147, 238);
+            this.noGroupUsersLb.Size = new System.Drawing.Size(173, 244);
             this.noGroupUsersLb.TabIndex = 1;
             // 
             // thisGroupUsersLB
             // 
+            this.thisGroupUsersLB.BackColor = System.Drawing.Color.DimGray;
+            this.thisGroupUsersLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thisGroupUsersLB.ForeColor = System.Drawing.Color.White;
             this.thisGroupUsersLB.FormattingEnabled = true;
-            this.thisGroupUsersLB.Location = new System.Drawing.Point(3, 62);
+            this.thisGroupUsersLB.ItemHeight = 16;
+            this.thisGroupUsersLB.Location = new System.Drawing.Point(0, 62);
             this.thisGroupUsersLB.Name = "thisGroupUsersLB";
             this.thisGroupUsersLB.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.thisGroupUsersLB.Size = new System.Drawing.Size(120, 251);
+            this.thisGroupUsersLB.Size = new System.Drawing.Size(174, 244);
             this.thisGroupUsersLB.TabIndex = 2;
-            // 
-            // addTheUsersBtn
-            // 
-            this.addTheUsersBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addTheUsersBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addTheUsersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addTheUsersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.addTheUsersBtn.ForeColor = System.Drawing.Color.White;
-            this.addTheUsersBtn.Location = new System.Drawing.Point(129, 72);
-            this.addTheUsersBtn.Name = "addTheUsersBtn";
-            this.addTheUsersBtn.Size = new System.Drawing.Size(61, 39);
-            this.addTheUsersBtn.TabIndex = 3;
-            this.addTheUsersBtn.Text = "<<<";
-            this.addTheUsersBtn.UseVisualStyleBackColor = true;
-            this.addTheUsersBtn.Click += new System.EventHandler(this.addTheUsersBtn_Click);
-            // 
-            // deleteTheUsersBtn
-            // 
-            this.deleteTheUsersBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.deleteTheUsersBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteTheUsersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteTheUsersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.deleteTheUsersBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteTheUsersBtn.Location = new System.Drawing.Point(129, 117);
-            this.deleteTheUsersBtn.Name = "deleteTheUsersBtn";
-            this.deleteTheUsersBtn.Size = new System.Drawing.Size(61, 39);
-            this.deleteTheUsersBtn.TabIndex = 4;
-            this.deleteTheUsersBtn.Text = ">>>";
-            this.deleteTheUsersBtn.UseVisualStyleBackColor = true;
-            this.deleteTheUsersBtn.Click += new System.EventHandler(this.deleteTheUsersBtn_Click);
             // 
             // label1
             // 
@@ -119,7 +82,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(217, 35);
+            this.label2.Location = new System.Drawing.Point(278, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 20);
             this.label2.TabIndex = 6;
@@ -137,6 +100,51 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Users in this group:";
             // 
+            // cancelBtn
+            // 
+            this.cancelBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.backicon;
+            this.cancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cancelBtn.ForeColor = System.Drawing.Color.White;
+            this.cancelBtn.Location = new System.Drawing.Point(447, 0);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(43, 36);
+            this.cancelBtn.TabIndex = 0;
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            // 
+            // deleteTheUsersBtn
+            // 
+            this.deleteTheUsersBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.navigate_rightorange;
+            this.deleteTheUsersBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.deleteTheUsersBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteTheUsersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteTheUsersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.deleteTheUsersBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteTheUsersBtn.Location = new System.Drawing.Point(187, 187);
+            this.deleteTheUsersBtn.Name = "deleteTheUsersBtn";
+            this.deleteTheUsersBtn.Size = new System.Drawing.Size(61, 39);
+            this.deleteTheUsersBtn.TabIndex = 4;
+            this.deleteTheUsersBtn.UseVisualStyleBackColor = true;
+            this.deleteTheUsersBtn.Click += new System.EventHandler(this.deleteTheUsersBtn_Click);
+            // 
+            // addTheUsersBtn
+            // 
+            this.addTheUsersBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.navigate_leftorangeeee1;
+            this.addTheUsersBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addTheUsersBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addTheUsersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addTheUsersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.addTheUsersBtn.ForeColor = System.Drawing.Color.White;
+            this.addTheUsersBtn.Location = new System.Drawing.Point(187, 139);
+            this.addTheUsersBtn.Name = "addTheUsersBtn";
+            this.addTheUsersBtn.Size = new System.Drawing.Size(61, 39);
+            this.addTheUsersBtn.TabIndex = 3;
+            this.addTheUsersBtn.UseVisualStyleBackColor = true;
+            this.addTheUsersBtn.Click += new System.EventHandler(this.addTheUsersBtn_Click);
+            // 
             // GroupAndUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,7 +157,6 @@
             this.Controls.Add(this.deleteTheUsersBtn);
             this.Controls.Add(this.addTheUsersBtn);
             this.Controls.Add(this.thisGroupUsersLB);
-            
             this.Controls.Add(this.noGroupUsersLb);
             this.Name = "GroupAndUsers";
             this.Size = new System.Drawing.Size(490, 325);

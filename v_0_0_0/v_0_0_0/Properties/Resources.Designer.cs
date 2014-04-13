@@ -143,6 +143,26 @@ namespace v_0_0_0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap navigate_leftorangeeee1 {
+            get {
+                object obj = ResourceManager.GetObject("navigate-leftorangeeee1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navigate_rightorange {
+            get {
+                object obj = ResourceManager.GetObject("navigate-rightorange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peopleicon {
             get {
                 object obj = ResourceManager.GetObject("peopleicon", resourceCulture);

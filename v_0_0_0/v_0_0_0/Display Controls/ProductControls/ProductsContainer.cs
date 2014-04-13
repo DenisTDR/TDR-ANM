@@ -38,7 +38,7 @@ namespace TALibrary
         }
         public void Reload()
         {
-            int y = 0;
+            int y = 10;
             ext.initDb();
             List<List<object>> llo = ext.tconn.Get("SELECT id, name, vote_points, category, price from product where category=??", new List<object>() { Category.ID });
             this.Controls.Clear();

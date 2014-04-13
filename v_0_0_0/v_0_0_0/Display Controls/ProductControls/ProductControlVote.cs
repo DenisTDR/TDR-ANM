@@ -50,7 +50,10 @@ namespace TALibrary
 
             if (x == 1 && y == 1 && z == 1)
             {
-                ext.connectedAccount.Points -= points;
+                int rp = Convert.ToInt32(ext.tconn.Value("SELECT points from account where id=??;", new List<object>() { ext.connectedAccount.Id }));
+                ext.connectedAccount.Points = rp;
+                extM.mf.pointsLbl.Text = "Vote points: " + rp;
+
                 MessageBox.Show("Your vote was registered.\r\nThank you!", "Success!");
                 cancelBtn.PerformClick();
             }
