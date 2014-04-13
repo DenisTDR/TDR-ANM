@@ -76,6 +76,7 @@ namespace TMySQLConnectorNS
             catch (Exception exc)
             {
                 connected = false;
+                
                 if (Debugging)
                     MessageBox.Show(exc.Message, "Fatal Error!");
                 return false;

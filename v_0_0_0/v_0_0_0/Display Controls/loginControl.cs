@@ -54,6 +54,8 @@ namespace TALibrary
                 string msg = funcs.getSetting(acc.Admin ? "admin_welcome_message" : "welcome_message");
                 extM.mf.userLbl.Text = "Logged in as: " + acc.Name + " (" + (acc.Admin ? "Admin" : "User") + ")";
                 extM.mf.pointsLbl.Text = "Vote points: " + acc.Points;
+                extM.mf.refreshPointsBtn.Visible = !acc.Admin;
+                extM.mf.pointsLbl.Visible = !acc.Admin;
                 MessageBox.Show(msg);
                 if (acc.Admin)
                     extM.mf.addControl(new AdminMainMenuControl());

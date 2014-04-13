@@ -166,6 +166,7 @@ namespace TALibrary
         }
         private void drawBtn_Click(object sender, EventArgs e)
         {
+
             Pen pen1=new Pen(Color.Black, 3);
             Pen pen2=new Pen(Color.Red, 3);
             
@@ -173,7 +174,9 @@ namespace TALibrary
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics g = Graphics.FromImage(bmp);
             makeMatrix();
-
+            pictureBox1.Image = bmp;
+            if (selectedProducts.Count == 0)
+                return;
             int sMax=0;
            
             for (int i = 0; i < selectedProducts.Count; i++)
@@ -225,7 +228,7 @@ namespace TALibrary
                 g.DrawLine(pen1, new Point(50 - 5, height - (int)(lPoints[i] * pointLength)+50),
                     new Point(50 + 5, height - (int)(lPoints[i] * pointLength)+50));
 
-            g.DrawRectangle(new Pen(new SolidBrush(Color.Red), 3), new Rectangle(0, 0, bmp.Width, bmp.Height));
+            //g.DrawRectangle(new Pen(new SolidBrush(Color.Red), 3), new Rectangle(0, 0, bmp.Width, bmp.Height));
             pictureBox1.Image = bmp;
         }
 
@@ -237,6 +240,7 @@ namespace TALibrary
         private void exportXlsBtn_Click(object sender, EventArgs e)
         {
             writeXls();
+            extM.mf.addControl(new tableControl(Matrix, allDates, selectedProducts));
         }
     }
     public class TimePoint

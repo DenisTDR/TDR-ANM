@@ -33,11 +33,11 @@
             this.PrevBtn = new TALibrary.CustomButton();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.customButton1 = new TALibrary.CustomButton();
             this.userPanel = new System.Windows.Forms.Panel();
             this.refreshPointsBtn = new TALibrary.CustomButton();
             this.pointsLbl = new TALibrary.CustomLabel();
             this.userLbl = new TALibrary.CustomLabel();
-            this.customButton1 = new TALibrary.CustomButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.userPanel.SuspendLayout();
@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.PrevBtn);
             this.panel1.Controls.Add(this.nextBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 411);
+            this.panel1.Location = new System.Drawing.Point(0, 462);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 39);
             this.panel1.TabIndex = 1;
@@ -93,7 +93,7 @@
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 80);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(724, 331);
+            this.mainPanel.Size = new System.Drawing.Size(724, 382);
             this.mainPanel.TabIndex = 2;
             // 
             // panel2
@@ -107,6 +107,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(724, 80);
             this.panel2.TabIndex = 0;
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackgroundImage = global::v_0_0_0.Properties.Resources.unifiedpost;
+            this.customButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.customButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(3, 5);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(299, 70);
+            this.customButton1.TabIndex = 3;
+            this.customButton1.UseVisualStyleBackColor = true;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // userPanel
             // 
@@ -161,30 +179,12 @@
             this.userLbl.TabIndex = 0;
             this.userLbl.Text = "Logged in as: User1";
             // 
-            // customButton1
-            // 
-            this.customButton1.BackgroundImage = global::v_0_0_0.Properties.Resources.unifiedpost;
-            this.customButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.customButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(3, 5);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(299, 70);
-            this.customButton1.TabIndex = 3;
-            this.customButton1.UseVisualStyleBackColor = true;
-            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(724, 450);
+            this.ClientSize = new System.Drawing.Size(724, 501);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -210,8 +210,8 @@
         private System.Windows.Forms.Panel panel2;
         public TALibrary.CustomLabel pointsLbl;
         public TALibrary.CustomLabel userLbl;
-        private TALibrary.CustomButton refreshPointsBtn;
         public System.Windows.Forms.Panel userPanel;
         private TALibrary.CustomButton customButton1;
+        public TALibrary.CustomButton refreshPointsBtn;
     }
 }

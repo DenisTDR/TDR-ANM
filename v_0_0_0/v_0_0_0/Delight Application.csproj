@@ -63,6 +63,18 @@
     <Compile Include="Display Controls\AdminMainMenuControl.Designer.cs">
       <DependentUpon>AdminMainMenuControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Display Controls\settingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\settingsControl.Designer.cs">
+      <DependentUpon>settingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Controls\tableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display Controls\tableControl.Designer.cs">
+      <DependentUpon>tableControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Display Controls\graphControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +225,12 @@
     <EmbeddedResource Include="Display Controls\AdminMainMenuControl.resx">
       <DependentUpon>AdminMainMenuControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\settingsControl.resx">
+      <DependentUpon>settingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Controls\tableControl.resx">
+      <DependentUpon>tableControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Display Controls\graphControl.resx">
       <DependentUpon>graphControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +337,7 @@
   <ItemGroup>
     <Content Include="icon1.ico" />
     <Content Include="icon2_256px.ico" />
+    <None Include="Resources\settings_icon.png" />
     <None Include="Resources\navigate-rightorange.png" />
     <None Include="Resources\navigate-leftorangeeee1.png" />
     <None Include="Resources\votelike.png" />

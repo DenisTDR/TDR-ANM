@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v_0_0_0", "v_0_0_0\v_0_0_0.csproj", "{50BE6D69-70C0-4629-AADF-12C34AE44447}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delight Application", "v_0_0_0\Delight Application.csproj", "{50BE6D69-70C0-4629-AADF-12C34AE44447}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMySQLConnector", "TMySQLConnector\TMySQLConnector.csproj", "{BDD5A91A-AB32-4A4C-9AB7-FE71E9FF55DF}"
 EndProject

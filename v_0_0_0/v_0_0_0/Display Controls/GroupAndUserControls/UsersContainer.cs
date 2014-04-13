@@ -70,9 +70,9 @@ namespace TALibrary
             panel2.Controls.Clear();
             List<List<object>> llo;
             if (g.ID == -1)
-                llo = ext.tconn.Get("SELECT id, name, points, group_id, user from account;", null);
+                llo = ext.tconn.Get("SELECT id, name, points, group_id, user from account where admin=0;", null);
             else
-                llo = ext.tconn.Get("SELECT id, name, points, group_id, user from account where group_id=??;", new List<object>() { g.ID });
+                llo = ext.tconn.Get("SELECT id, name, points, group_id, user from account where group_id=?? and admin=0;", new List<object>() { g.ID });
             extM.Log(null, llo.Count.ToString());
             for (int i = 0; i < llo.Count; i++)
             {

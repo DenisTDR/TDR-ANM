@@ -61,6 +61,7 @@ namespace TALibrary
                 this.Controls.Add(pc);
             }
             this.Size = extM.mf.mainPanel.Size;
+            addUserBtn.Visible = ext.connectedAccount.Admin;
         }
         public override void TShow()
         {

@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportBtn = new TALibrary.CustomButton();
+            this.settingsBtn = new TALibrary.CustomButton();
             this.graphBtn = new TALibrary.CustomButton();
             this.categoriesBtn = new TALibrary.CustomButton();
             this.usersBtn = new TALibrary.CustomButton();
             this.groupsBtn = new TALibrary.CustomButton();
             this.SuspendLayout();
             // 
-            // reportBtn
+            // settingsBtn
             // 
-            this.reportBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.reportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportBtn.ForeColor = System.Drawing.Color.White;
-            this.reportBtn.Location = new System.Drawing.Point(91, 277);
-            this.reportBtn.Name = "reportBtn";
-            this.reportBtn.Size = new System.Drawing.Size(119, 67);
-            this.reportBtn.TabIndex = 3;
-            this.reportBtn.Text = "Report";
-            this.reportBtn.UseVisualStyleBackColor = true;
-            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
+            this.settingsBtn.BackgroundImage = global::v_0_0_0.Properties.Resources.settings_icon;
+            this.settingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.settingsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.settingsBtn.ForeColor = System.Drawing.Color.White;
+            this.settingsBtn.Location = new System.Drawing.Point(208, 277);
+            this.settingsBtn.Name = "settingsBtn";
+            this.settingsBtn.Size = new System.Drawing.Size(77, 81);
+            this.settingsBtn.TabIndex = 5;
+            this.settingsBtn.UseVisualStyleBackColor = true;
+            this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
             // graphBtn
             // 
@@ -55,6 +56,7 @@
             this.graphBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.graphBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.graphBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.graphBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.graphBtn.ForeColor = System.Drawing.Color.White;
             this.graphBtn.Location = new System.Drawing.Point(186, 161);
             this.graphBtn.Name = "graphBtn";
@@ -69,6 +71,7 @@
             this.categoriesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.categoriesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.categoriesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.categoriesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.categoriesBtn.ForeColor = System.Drawing.Color.White;
             this.categoriesBtn.Location = new System.Drawing.Point(186, 26);
             this.categoriesBtn.Name = "categoriesBtn";
@@ -83,6 +86,7 @@
             this.usersBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.usersBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.usersBtn.ForeColor = System.Drawing.Color.White;
             this.usersBtn.Location = new System.Drawing.Point(23, 161);
             this.usersBtn.Name = "usersBtn";
@@ -97,6 +101,7 @@
             this.groupsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.groupsBtn.ForeColor = System.Drawing.Color.White;
             this.groupsBtn.Location = new System.Drawing.Point(23, 26);
             this.groupsBtn.Name = "groupsBtn";
@@ -110,8 +115,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.settingsBtn);
             this.Controls.Add(this.graphBtn);
-            this.Controls.Add(this.reportBtn);
             this.Controls.Add(this.categoriesBtn);
             this.Controls.Add(this.usersBtn);
             this.Controls.Add(this.groupsBtn);
@@ -126,7 +131,7 @@
         private TALibrary.CustomButton groupsBtn;
         private TALibrary.CustomButton usersBtn;
         private TALibrary.CustomButton categoriesBtn;
-        private TALibrary.CustomButton reportBtn;
         private TALibrary.CustomButton graphBtn;
+        private CustomButton settingsBtn;
     }
 }

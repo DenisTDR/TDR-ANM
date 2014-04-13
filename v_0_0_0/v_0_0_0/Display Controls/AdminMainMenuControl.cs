@@ -54,6 +54,11 @@ namespace TALibrary
             extM.mf.addControl(new graphControl());
         }
 
+        private void settingsBtn_Click(object sender, EventArgs e)
+        {
+            extM.mf.addControl(new settingsControl());
+        }
+
         
     }
 }
